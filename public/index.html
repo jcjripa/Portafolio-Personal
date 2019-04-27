@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="es" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="title" content="Programador Web y Desarrollador de Apps Mobiles | Web and Mobile Developer" />
+  <meta name="description" content="Programador Web y Desarrollador de Apps Mobiles | Web and Mobile Developer" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+  <!-- links -->
+ 
+  <link rel="shortcut icon" href="/assets/img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.min.css">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Julio Cesar Rivera" />
+  <meta property="og:description" content="Programador Frontend y Móvil | Web and Mobile Developer" />
+  <meta property="og:url" content="http://www.juliocesarrivera.com" />
+  <meta property="og:type" content="Portafolio" />
+  <meta property="og:locale" content="es_PE" />
+  <meta property="og:site_name" content="Julio Cesar Rivera - Web and Mobile Developer" />
+  <meta property="og:image" content="http://www.juliocesarrivera.com/assets/img/bg1.jpg" />
+  <meta property="og:image:alt" content="Imagen de Programador Frontend / Mobile" />
+  <meta property="og:image:secure_url" content="http://www.juliocesarrivera.com" />
+  <!-- fin de Open Grapgh -->
+
+  <!-- Twitter -->
+  <meta name="twitter:image" content="http://www.juliocesarrivera.com/assets/img/bg1.jpg" />
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:title" content="Julio Cesar Rivera" />
+  <meta property="twitter:site" content="@jcjrivera" class="next-head" />
+  <meta property="twitter:description" content="Programador Frontend y Móvil | Web and Mobile Developer" />
+
+
+  <title>Julio Cesar Rivera - Web and Mobile Developer</title>
+</head>
+
+<body>
+  <!--  *** INICIO *** -->
+  <div class="container-site" id="container-site">
+    <!-- PREOLOADER -->
+    <div class="preloader" id="preloader">
+      <div class="preloader--bounce">
+        <div class="preloader--bounce--1"></div>
+        <div class="preloader--bounce--2"></div>
+      </div>
+    </div>
+    <!-- MODAL -->
+    <form action="" method="" id="my-modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-content__s1">
+          <h5>¿TIENE UN PROYECTO?</h5>
+          <p>Estoy listo para ayudarte. Simplemente escriba los detalles a continuación y / o envíame un archivo.</p>
+          <span class="close"><i class="fas fa-times"></i></span>
+        </div>
+        <div class="modal-content__s2">
+          <div class="modal-content__s2-s1">
+            <div>
+              <input type="text" placeholder="Nombre" required>
+              <input type="email" placeholder="Email" required>
+            </div>
+            <div>
+              <input type="text" placeholder="Título de Proyecto" required>
+              <select name="category" id="category" required> 
+                <option>- Seleccione Categoría</option>
+                <option value="Programador Web">Programador Web</option>
+                <option value="Programador Móvil">Programador Mobile</option>
+                <option value="Frontend">Frontend</option>
+              </select>
+            </div>
+          </div>
+          <div class="modal-content__s2-s2">
+            <textarea name="modalMessage" rows="9" required></textarea>
+            <div class="modal-container">
+              <div class="modal-container-upload">
+                <label for="file-upload" class="flex-center">
+                  <i class="fas fa-paperclip"></i> Adjuntar archivo
+                </label>
+                <input id="file-upload" onchange="cambiar()" type="file" style="display:none;">
+              </div>
+              <div class="modal-container-info flex-center" id="modal-info">Ningún archivo elegido</div>
+            </div>
+
+          </div>
+          <div class="modal-content__s2-s3">
+            <input type="submit" value="ENVIAR" class="btn btn--dark">
+          </div>
+        </div>
+      </div>
+    </form>
+    <!-- FIN DE MODAL -->
+    <!-- HEADER -->
+    <header class="header" id="header">
+      <div class="main-header l-container">
+        <a href="#"class="main-header__s1 ss-animation">
+          <img src="/assets/img/logo.png" width="50" height="50" alt="logo de Julio Cesar Rivera">
+          <div class="main-header__s1-user">
+            <h1>J.C.J. <strong>RIVERA</strong></h1>
+            <p><strong>FRONTEND</strong> JR</p>
+          </div>
+        </a>
+        <!-- MENU -->
+        <div class="main-header__s2">
+          <div id="burger" class="btn btn--light flex-center" data-target="main-menu"><i class="fa fa-bars"></i></div>
+          <nav class="main-menu" id="main-menu">
+            <ul class="main-menu__list">
+              <li class="main-menu__item"><a href="#" class="main-menu__link ss-animation">INICIO</a></li>
+              <li class="main-menu__item"><a href="#sobremi" class="main-menu__link ss-animation">SOBRE MI</a></li>
+              <li class="main-menu__item"><a href="#servicios" class="main-menu__link ss-animation">SERVICIOS</a></li>
+              <li class="main-menu__item"><a href="#trabajos" class="main-menu__link ss-animation">TRABAJOS</a></li>
+              <li class="main-menu__item"><a href="#precios" class="main-menu__link ss-animation">PRECIOS</a></li>
+              <li class="main-menu__item"><a href="#contacto" class="main-menu__link ss-animation">CONTACTO</a></li>
+            </ul>
+          </nav>
+          <div id="modal-btn" class="btn btn--light flex-center"><i class="fa fa-user-plus"></i></div>
+
+          <div id="modal-btn2" class="contratame btn btn--light flex-center">CONTRATAME</div>
+        </div>
+      </div>
+    </header>
+
+    <!-- BANNER-->
+    <section class="banner" id="banner">
+      <div class="banner-video">
+        <video src="/assets/video/video.mp4" autoplay loop muted></video>
+      </div>
+      <div class="banner-overlay"></div>
+      <div class="main-banner l-container">
+        <div class="main-banner__s1">
+          <h2><strong>VAMOS </strong> A<br><strong>CONSTRUIR</strong> ALGO <br> <strong>GRANDE</strong> JUNTOS</h2>
+          <p><a href="https://twitter.com/ProgramadorSoy?lang=es" target="_blank"><strong>#Soy Programador
+              </strong></a>Web y Móvil . Hago que la aplicación visual para web y móvil sea más interactiva</p>
+          <div class="btn btn--light"><a class="flex-center" href="https://api.whatsapp.com/send?phone=51964650338"
+              target="_blank">HABLEMOS</a></div>
+        </div>
+      </div>
+    </section>
+    <!-- FIN DE BANNER -->
+
+    <!-- SOBRE MI -->
+    <section class="sobremi l-section" id="sobremi">
+      <div class="main-sobremi l-container">
+        <h3 class="tittle">SOBRE MI</h3>
+        <div class="main-sobremi__content">
+          <div class="main-sobremi__content-s1">
+            <h4 class="subtittle">QUIEN <strong>SOY</strong> YO?</h4>
+            <p>Estoy ubicado en Ciudad de Lima. Desde 2015 tengo experiencia profesional en el área de la programación y
+              el desarrollo web. Me gusta trabajar con lo último en <strong>Tendencia</strong>, y me capacito todo el
+              Tiempo.</p>
+            <p>Me apasiona desarrollar Webs y Aplicaciones Dinámicas , con buenas prácticas para poder darle un correcto
+              mantenimiento y se pueda escalar a un proyecto más grande a futuro , y Trabajo bajo el pensamiento de
+              <strong>"Menos es Mas".</strong></p>
+            <div class="btn btn--dark"><a class="flex-center" href="/assets/data/jcjrivera-cv.pdf" download>DESCARGAR MI CV</a></div>
+          </div>
+          <div class="main-sobremi__content-s2">
+            <h4 class="subtittle">CONOCIMIENTOS <strong>EN</strong></h4>
+            <h5>HTML5 ( EMMET / BEM )</h5>
+            <div class="progress ">
+              <div class="progress-bar bar1">
+                <p>90%</p>
+              </div>
+            </div>
+            <h5>CSS3 ( FLEXBOX / GRID / SASS / RWD )</h5>
+            <div class="progress">
+              <div class="progress-bar bar2">
+                <p>80%</p>
+              </div>
+            </div>
+            <h5>JAVASCRIPT ( VANILLA )</h5>
+            <div class="progress ">
+              <div class="progress-bar bar3">
+                <p>75%</p>
+              </div>
+            </div>
+            <h5>BOOTSTRAP / FOUNDATION / BULMA /</h5>
+            <div class="progress ">
+              <div class="progress-bar bar4">
+                <p>70%</p>
+              </div>
+            </div>
+            <h5>GIT / GIT HUB</h5>
+            <div class="progress ">
+              <div class="progress-bar bar5">
+                <p>60%</p>
+              </div>
+            </div>
+            <h5>WORDPRESS</h5>
+            <div class="progress ">
+              <div class="progress-bar bar6">
+                <p>50%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="servicios l-section" id="servicios">
+      <div class="main-servicios l-container">
+        <h3 class="tittle--dark">SERVICIOS</h3>
+        <div class="main-servicios__content">
+          <div class="main-servicios__content-item">
+            <div class="main-servicios__content-item-avatar flex-center">
+              <i class="fas fa-laptop-code "></i>
+            </div>
+            <div class="main-servicios__content-item-info">
+              <h4 class="subtittle"><span>WEBS <strong>ADMINISTRABLES</strong></span></h4>
+              <p>Webs de última generación que cumple los estándares de Diseño Responsive en Smartphones y Tablets</p>
+            </div>
+
+          </div>
+          <div class="main-servicios__content-item">
+            <div class="main-servicios__content-item-avatar flex-center">
+              <i class="far fa-object-group "></i>
+            </div>
+            <div class="main-servicios__content-item-info">
+              <h4 class="subtittle"><span>AULAS <strong>VIRTUALES</strong></span></h4>
+              <p>Clases, Cursos o Seminarios a estudiantes de cualquier lugar del mundo en cualquier momento, durante
+                las 24 Horas del Día</p>
+            </div>
+          </div>
+          <div class="main-servicios__content-item">
+            <div class="main-servicios__content-item-avatar flex-center">
+              <i class="fas fa-store"></i>
+            </div>
+            <div class="main-servicios__content-item-info">
+              <h4 class="subtittle"><span>TIENDAS <strong>VIRTUALES</strong></span></h4>
+              <p>Las Tiendas Virtuales (e-commerce) abren un mundo de posibilidades al profesional o empresario que anda
+                buscando maneras de usar la internet y tecnologías web para incrementar ingresos.</p>
+            </div>
+          </div>
+          <div class="main-servicios__content-item">
+            <div class="main-servicios__content-item-avatar flex-center">
+              <i class="fas fa-window-maximize"></i>
+            </div>
+            <div class="main-servicios__content-item-info">
+              <h4 class="subtittle"><span>WEBS <strong>BÁSICAS</strong> </span></h4>
+              <p>Las Webs Básicas que desarrollo son totalmente personalizadas y validadas en W3C con los mejores
+                estándares a nivel mundial.</p>
+            </div>
+          </div>
+          <div class="main-servicios__content-item">
+            <div class="main-servicios__content-item-avatar flex-center">
+              <i class="fas fa-file-code"></i>
+            </div>
+            <div class="main-servicios__content-item-info">
+              <h4 class="subtittle"><span>POSICIONAMIENTO WEB <strong>SEO</strong></span></h4>
+              <p>Una amplia mayoría de personas cree que al Diseñar y publicar su Sitio o Página Web automáticamente
+                ocupará los primeros lugares del Buscador de Google, este pensamiento esta muy lejos de la realidad.</p>
+            </div>
+          </div>
+          <div class="main-servicios__content-item">
+            <div class="main-servicios__content-item-avatar flex-center">
+              <i class="fas fa-server"></i>
+            </div>
+            <div class="main-servicios__content-item-info">
+              <h4 class="subtittle"><span>HOSTING Y <strong>DOMINIO</strong></span></h4>
+              <p>El hosting está optimizado para garantizar un rendimiento eficaz con alto tráfico de visitantes</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRABAJOS -->
+    <section class="trabajos l-section" id="trabajos">
+      <div class="main-trabajos l-container">
+        <h3 class="tittle">TRABAJOS</h3>
+        <div class="main-trabajos__gallery">
+          <div class="gallery-item">
+            <div class="gallery-item__hero i-1">
+              <div class="gallery-item__hero-content">
+                <div class="gallery-item__hero-content__link">
+                  <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-item__hero i-2">
+              <div class="gallery-item__hero-content">
+                <div class="gallery-item__hero-content__link">
+                  <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-item__hero i-3">
+              <div class="gallery-item__hero-content">
+                <div class="gallery-item__hero-content__link">
+                  <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-item__hero i-4">
+              <div class="gallery-item__hero-content">
+                <div class="gallery-item__hero-content__link">
+                  <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-item__hero i-5">
+              <div class="gallery-item__hero-content">
+                <div class="gallery-item__hero-content__link">
+                  <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-item__hero i-6">
+              <div class="gallery-item__hero-content">
+                <div class="gallery-item__hero-content__link">
+                  <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FEEDBACK -->
+    <section class="feedback" id="feedback">
+      <div class="main-feedback l-container">
+        <img src="/assets/svg/html5.svg" alt="logo html5">
+        <img src="/assets/svg/css-file-format-symbol.svg" alt="logo css3">
+        <img src="/assets/svg/javascript.svg" alt="logo javascript">
+        <img src="/assets/svg/sass.svg" alt="logo sass">
+        <img src="/assets/svg/responsive.svg" alt="logo responsive">
+        <img src="/assets/svg/wordpress.svg" alt="logo wordpress">
+        <img src="/assets/svg/drupal-logo.svg" alt="logo drupal">
+        <img src="/assets/svg/git.svg" alt="logo git">
+      </div>
+    </section>
+
+    <!-- PRECIOS -->
+    <section class="precios l-section" id="precios">
+      <div class="main-precios l-container">
+        <h3 class="tittle">PRECIOS</h3>
+        <div class="main-precios__content">
+          <div class="content-item">
+            <div class="content-item__s1 flex-center">
+              <h4><strong>WEB SPA</strong></h4>
+            </div>
+            <div class="content-item__s2">
+              <p>Desde</p>
+              <h5>$250</h5>
+            </div>
+            <div class="content-item__s3 flex-center">
+              <ul>
+                <li class="content-item__s3-item flex-center">
+                  <p>1 <strong>Página </strong></p>
+                </li>
+                <li class="content-item__s3-item flex-center">
+                  <p>6 <strong>Secciones</strong></p>
+                </li>
+                <li class="content-item__s3-item flex-center">
+                  <p>100% <strong>Responsive</strong></p>
+                </li>
+                <li class="content-item__s3-item flex-center">
+                  <p>Validado en <strong>W3C</strong></p>
+                </li>
+              </ul>
+            </div>
+            <div class="content-item__s4 flex-center">
+              <div class="btn btn--light"><a class="flex-center ss-animation" href="#contacto">CONTRATAME</a></div>
+            </div>
+          </div>
+
+          <div class="content-item">
+            <div class="content-item__s1 flex-center">
+              <h4><strong>WEB MULTIPAGE</strong></h4>
+            </div>
+            <div class="content-item__s2">
+              <p>Desde</p>
+              <h5>$380</h5>
+            </div>
+            <div class="content-item__s3 flex-center">
+              <ul>
+                <li class="content-item__s3-item flex-center">
+                  <p>6 <strong>Páginas </strong></p>
+                </li>
+                <li class="content-item__s3-item flex-center">
+                  <p>CMS <strong>WORDPRESS</strong></p>
+                </li>
+                <li class="content-item__s3-item flex-center">
+                  <p>100% <strong>Responsive</strong></p>
+                </li>
+                <li class="content-item__s3-item flex-center">
+                  <p>Validado en <strong>W3C</strong></p>
+                </li>
+              </ul>
+            </div>
+            <div class="content-item__s4 flex-center">
+              <div class="btn btn--light"><a class=" flex-center ss-animation" href="#contacto">CONTRATAME</a></div>
+            </div>
+          </div>
+          <div class="content-item">
+            <div class="content-item__s1 flex-center">
+              <h4><strong>WEB E-COMMERCE</strong></h4>
+            </div>
+            <div class="content-item__s2">
+              <p>Desde</p>
+              <h5>$550</h5>
+            </div>
+            <div class="content-item__s3 flex-center">
+              <ul>
+                <li class="content-item__s3-item flex-center">
+                  <p>Tienda <strong>Virtual </strong></p>
+                </li>
+                <li class="content-item__s3-item flex-center">
+                  <p>CMS <strong>WORDPRESS</strong></p>
+                </li>
+                <li class="content-item__s3-item flex-center">
+                  <p>100% <strong>Responsive</strong></p>
+                </li>
+                <li class="content-item__s3-item flex-center">
+                  <p>Pagos <strong>Informativos</strong></p>
+                </li>
+              </ul>
+            </div>
+            <div class="content-item__s4 flex-center">
+              <div class="btn btn--light"><a class="flex-center ss-animation" href="#contacto">CONTRATAME</a></div>
+            </div>
+          </div>
+          <div class="content-item">
+            <div class="content-item__s1 flex-center">
+              <h4><strong>WEB E-COMMERCE PRO </strong></h4>
+            </div>
+            <div class="content-item__s2">
+              <p>Desde</p>
+              <h5>$999</h5>
+            </div>
+            <div class="content-item__s3 flex-center">
+              <ul>
+                <li class="content-item__s3-item flex-center">
+                  <p>Tienda <strong>Virtual </strong></p>
+                </li>
+                <li class="content-item__s3-item flex-center">
+                  <p>CMS <strong>WORDPRESS</strong></p>
+                </li>
+                <li class="content-item__s3-item flex-center">
+                  <p>100% <strong>Responsive</strong></p>
+                </li>
+                <li class="content-item__s3-item flex-center">
+                  <p>Pagos <strong>Visa , Mastercard , Etc</strong></p>
+                </li>
+              </ul>
+            </div>
+            <div class="content-item__s4 flex-center">
+              <div class="btn btn--light"><a class="flex-center ss-animation" href="#contacto">CONTRATAME</a></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- BRANDS -->
+    <section class="brands" id="brands">
+      <div class="main-brands l-container"></div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="contacto l-section" id="contacto">
+      <div class="main-contacto l-container">
+        <h3 class="tittle">CONTACTO</h3>
+        <div class="main-contacto__content">
+          <div class="main-contacto__content-s1">
+            <address>
+              <p><i class="fa fa-home"></i> Jr.Morro de Arica 595 , Villa Esperanza, Lima , Perú.</p>
+              <p><i class="fa fa-envelope"></i>jcjriverapacaya@gmail.com</p>
+              <p><i class="fa fa-phone"></i> 964 - 650 - 338</p>
+              <p><i class="fa fa-fax"></i>(01) 228 - 6336</p>
+            </address>
+            <div class="main-contacto__content-s1__social">
+              <ul>
+                <li><a href="https://www.facebook.com/juliocesar.rivera.528" target="_blank"><i
+                      class="fab fa-facebook-f"></i></a></li>
+                <!-- <li><a href="https://twitter.com/jcjrivera?lang=es" target="_blank"><i class="fab fa-twitter"></i></a>
+                </li> -->
+                <li><a href="https://www.instagram.com/jcjrivera/?hl=es-la" target="_blank"><i
+                      class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/julio-cesar-rivera-pacaya-b41b5b17a/" target="_blank"><i
+                      class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="https://github.com/jcjripa" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://api.whatsapp.com/send?phone=51964650338" target="_blank"><i
+                      class="fab fa-whatsapp"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="main-contacto__content-s2">
+            <div class="contact-form">
+              <form action="" method="">
+                <div class="contact-form__item">
+                  <input type="text" name="contactName" class="c-input form-control" placeholder="Nombre" required>
+                </div>
+                <div class="contact-form__item">
+                  <input type="email" name="contactEmail" class="c-input form-control" placeholder="Email" required>
+                </div>
+                <div class="contact-form__item">
+                  <input type="text" name="contactAsunto" class="c-input form-control" placeholder="Asunto" required>
+                </div>
+                <div class="contact-form__item">
+                  <textarea name="contactMessage" cols="40" rows="10" class="c-Message form-control"
+                    placeholder="Mensaje" required></textarea>
+                </div>
+                <div class="contact-form__item">
+                  <input type="submit" value="ENVIAR" class="c-btn">
+                  <div class="c-loader"></div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <section class="footer" id="footer">
+      <iframe class="footer__map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d976.0653458920945!2d-77.01944817076992!3d-11.886878687126925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTHCsDUzJzEyLjgiUyA3N8KwMDEnMDguMCJX!5e0!3m2!1ses!2spe!4v1554692937206!5m2!1ses!2spe"
+        width="1920" height="600" style="border:0" allowfullscreen></iframe>
+      <div class="footer__content">
+        <p>Copyright © 2019 Julio Cesar Rivera , Todos los derechos reservados.</p>
+      </div>
+    </section>
+
+    <!-- BACKTOTOP -->
+    <section class="backtotop" id="backtotop">
+      <a href="#container-site" class="btn--default ss-animation"><i class="fa fa-angle-up"></i></a>
+    </section>
+
+  </div>
+  <!-- scripts -->
+  <script src="/assets/js/smooth-scroll.min.js"></script>
+  <script src="/assets/js/script.min.js"></script>
+</body>
+
+</html>
